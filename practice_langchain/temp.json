@@ -1,0 +1,24 @@
+{
+    "index": 6,
+    "name": "염민규",
+    "sex": "남자",
+    "age": "12",
+    "learning status" : {
+        "writing" : {
+            "total time learned" : 3.2,
+            "average score" : 80
+        },
+        "reading" : {
+            "total time learned" : 1.9,
+            "average score" : 90
+        },
+        "listening" : {
+            "total time learned" : 4.1,
+            "average score" : 70
+        },
+        "speaking" : {
+            "total time learned" : 1.2,
+            "average score" : 60
+        }
+    }
+}

@@ -1,0 +1,87 @@
+
+{
+    "index" : 3,
+    "name" : "이하늬",
+    "sex" : "여자",
+    "age" : 16,
+    "MBTI" : "ISTP",
+    "likes" : "makeup, Eating Tteokbokki, play steam games, reading book ,study science",
+    "dislikes" : "study korean language, bug, exercise, ",
+    "score" : {
+        "Korean Language" : 85,
+        "Mathematics" : 95,
+        "English" : 90, 
+        "Social Studies" : 90,
+        "Science" : 100,
+        "Physical Education" : 79,
+        "Music" : 91,
+        "Fine Arts" : 89
+    },
+    "consultation result" : "This student is worried about not being sure about his career path. And because of his passive personality, he has difficulty getting along with his classmates. However, it is burdensome when it comes to group activities, but it is not so difficult that it is not possible to do activities",
+    "career counseling" : {
+        "Scientist" : "She is interested in science and wants to become a scientist."
+    },
+    "disease" : "low blood pressure",
+    "Awards" : {
+        "1st grade" : "perfect attendance award",
+        "2nd grade" : "perfect attendance award, school reading award",
+        "3rd grade" : "school reading award"
+    },
+    "Creative experiential activities" : {
+        "autonomous activity": "Participated in the provincial book report contest",
+        "Club activities": "book club",
+        "Career Activities": "Go to my father's lab and experience what scientists are doing",
+        "Volunteer" : "Twice a month, regular volunteer work at an orphanage for the disabled"
+    },
+    "Free Semester Activity Status" : {
+        "career exploration activities" : {
+            "time" : 34,
+            "Remarks" : {
+                "Career exploration reading activities" : {
+                    "time" : 17,
+                    "activity content" : "She is interested in science and has a habit of reading steadily, and has a habit of organizing his thoughts logically through a book review after reading a book. In the 'Revealing My Dream' and 'Who Am I' activities, they ponder over the point that they have not yet decided on their career path, and seriously explore the career path they want to achieve."
+                },
+                "dream career portfolio" : {
+                    "time" : 17,
+                    "activity content" : "Visiting science-related research institutes and asking questions with interest in various experiments and verification processes. Excellent ability to create a career portfolio that is related to jobs related to biotechnology and their own careers, and participated in exhibitions of outstanding learning activities."
+                }
+            }
+        },
+        "Topic selection activity" : {
+            "time" : 85,
+            "Remarks" : {
+                "drama and society" : {
+                    "time" : 34,
+                    "activity content"  : "Actively participate in activities such as the drama production process and character analysis in the drama, and participate in broadcasting station visits"
+                },
+                "Fusion with the world of creative design" : {
+                    "time" : 34,
+                    "activity content" : "Shows excellent ability in the activity of producing the desired work using the illustrator's pen tool, and has a high sense of color, so the completion of the work is high"
+                },
+                "Media Literacy 'Dream'" : {
+                    "time" : 17,
+                    "activity content" : "Excellent ability to understand various contexts of media data, find meanings in them, interpret and utilize them critically, and actively participate in the 'Knowing TV Right' project learning"
+                }
+            }
+                
+        },
+        "Arts and sports activities" : {
+            "time" : 17,
+            "Remarks" : {
+                "See the world through webtoons" : {
+                    "time" : 17,
+                    "activity content" : "Observe the subject from new and diverse perspectives, develop ideas, and design characters by self-directedly solving problems that arise in the course of practice as an expression method that is creative and brings out the characteristics of the subject well."
+                }
+            }
+        },
+        "club activities" : {
+            "time" : 17,
+            "Remarks" : {
+                "broadcast class" : {
+                    "time" : 17,
+                    "activity content" : "She dreams of becoming a broadcasting producer. He has a lot of interest in broadcasting, so he enjoys filming and recording school events with his camera, as well as preparing well for events to go smoothly."
+                }
+            }
+        }
+    }
+}

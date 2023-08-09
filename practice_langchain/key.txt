@@ -1,0 +1,12 @@
+openai : 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
+const option = {
+      headers: {
+        'Authorization': 'Bearer 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',
+      },
+}
+
+### 카카오 디벨로퍼스 키
+네이티브 앱 키 : 	f2e161d05ac976df1bb9a389d6aef3a0
+REST API 키 : 	0619a519a9c468e52de61c3cb8600747
+자바스크립트 키 : 	c87afa454362472aa90344840cc0fb82
+어드민 키 : 	9bfc48d18b05c1df64790439899be28f

@@ -1,0 +1,45 @@
+
+{
+    "index": 6,
+    "name": "조성은",
+    "sex": "남자",
+    "age": "26",
+    "vital sign": {
+    "temperature": "38.2",
+    "heart rate": "90",
+    "respiration rate": "30",
+    "blood pressure": "130"
+    },
+    "disease name": "사지골절, 전신 타박상, 복부 관통상",
+    "disease cause": "교통사고",
+    "main symptom": "통증으로 인한 고열, 높은 심박 수",
+    "ward location": "A동",
+    "hospital room location": "302호",
+    "admission date": "2023년 4월 23일",
+    "last diagnosis content": "골절 및 전신 타박상 및 복부 관통상으로 인한 과다출혈로 인해 응급수술 필요",
+    "last diagnosis date": "2023년 4월 23일",
+    "action content": [
+    {
+        "action detail content": "수술 전 과다 출혈로 인한 응급 수혈 조치",
+        "action date": "2023년 4월 23일"
+    }
+    ],
+    "next diagnosis date": "2023년 4월 24일",
+    "surgery record": [
+    {
+        "surgery content": "골절 및 복부 관통상 수술",
+        "surgery date": "2023년 4월 23일"
+    }
+    ],
+    "next surgery date": "2023년 4월 29일",
+    "drug administration info": [
+    {
+        "drug info": "마취제, 진통제",
+        "administration date": "2023년 4월 23일",
+        "administration intent": "수술 진행 및 수술 후 진통 목적"
+    }
+    ]
+}
+
+
+    
