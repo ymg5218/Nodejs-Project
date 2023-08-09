@@ -1,0 +1,42 @@
+### 회원 가입
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email" : "andy3@podo.com",
+    "password" : "1234",
+    "username" : "mingyu"
+}
+
+### 로그인
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+    "email" : "mingyu@naver.com",
+    "password" : "1234"
+}
+
+### 로그인 2
+POST http://localhost:3000/auth/login2
+Content-Type: application/json
+
+{
+    "email" : "mingyu@naver.com",
+    "password" : "1234"
+}
+
+### 가드 테스트
+GET http://localhost:3000/auth/test-guard
+
+### 로그인 3
+POST http://localhost:3000/auth/login3
+Content-Type: application/json
+
+{
+    "email" : "mingyu@naver.com",
+    "password" : "1234"
+}
+
+### 인증이 성공하는지 테스트
+GET http://localhost:3000/auth/test-guard2 
