@@ -36,7 +36,7 @@ export declare class BoardService {
     })[]>;
     findPagedAll(page: number, limit: number): Promise<import("mongoose").PaginateResult<import("mongoose").Document<unknown, {
         sort: {
-            createdAt: number;
+            datetime: number;
         };
         page: number;
         limit: number;

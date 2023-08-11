@@ -16,16 +16,14 @@ export class BoardService {
     async findAll() {
         return this.boardModel.find();
     }
-
+    
     async findPagedAll(page: number, limit: number) {
-        return await this.boardModel.paginate(
-            {},
+        return this.boardModel.paginate({},
             {
                 sort : {
-                    createdAt : -1
+                    datetime : -1
                 },
-                page,
-                limit
+                page, limit
             }
         )
     }

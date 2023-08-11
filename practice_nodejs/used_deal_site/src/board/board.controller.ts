@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, NotFoundException, Param, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, NotFoundException, Param, Post, Query } from '@nestjs/common';
 import { BoardService } from './board.service';
 import { BoardDTO } from './dto/board.dto';
 
@@ -15,8 +15,8 @@ export class BoardController {
 
     @Get('findAll2')
     async getPagedAll(
-        @Param('page') page : number,
-        @Param('limit') limit : number
+        @Query('page') page : number,
+        @Query('limit') limit : number
     ) {
         return await this.boardService.findPagedAll(page,limit);
     }

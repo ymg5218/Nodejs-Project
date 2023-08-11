@@ -52,8 +52,8 @@ __decorate([
 ], BoardController.prototype, "getAll", null);
 __decorate([
     (0, common_1.Get)('findAll2'),
-    __param(0, (0, common_1.Param)('page')),
-    __param(1, (0, common_1.Param)('limit')),
+    __param(0, (0, common_1.Query)('page')),
+    __param(1, (0, common_1.Query)('limit')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number, Number]),
     __metadata("design:returntype", Promise)

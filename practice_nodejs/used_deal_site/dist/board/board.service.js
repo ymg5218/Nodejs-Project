@@ -28,12 +28,11 @@ let BoardService = exports.BoardService = class BoardService {
         return this.boardModel.find();
     }
     async findPagedAll(page, limit) {
-        return await this.boardModel.paginate({}, {
+        return this.boardModel.paginate({}, {
             sort: {
-                createdAt: -1
+                datetime: -1
             },
-            page,
-            limit
+            page, limit
         });
     }
     async findOne(_id) {
