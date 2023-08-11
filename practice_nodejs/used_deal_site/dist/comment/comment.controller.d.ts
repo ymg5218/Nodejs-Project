@@ -23,6 +23,7 @@
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose" />
 /// <reference types="mongoose/types/inferschematype" />
+/// <reference types="mongoose-paginate-v2" />
 import { CommentService } from './comment.service';
 import { CommentDTO } from './dto/comment.dto';
 import { ReCommentDTO } from './dto/recomment.dto';

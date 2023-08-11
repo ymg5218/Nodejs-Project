@@ -13,6 +13,7 @@ exports.BoardSchema = exports.Board = void 0;
 const mongoose_1 = require("@nestjs/mongoose");
 const mongodb_1 = require("mongodb");
 const mongoose_2 = require("mongoose");
+const mongoosePaginate = require("mongoose-paginate-v2");
 let Board = exports.Board = class Board extends mongoose_2.Document {
 };
 __decorate([
@@ -46,5 +47,7 @@ __decorate([
 exports.Board = Board = __decorate([
     (0, mongoose_1.Schema)()
 ], Board);
-exports.BoardSchema = mongoose_1.SchemaFactory.createForClass(Board);
+const schema = mongoose_1.SchemaFactory.createForClass(Board);
+schema.plugin(mongoosePaginate);
+exports.BoardSchema = schema;
 //# sourceMappingURL=board.schema.js.map

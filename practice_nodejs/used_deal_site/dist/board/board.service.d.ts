@@ -22,17 +22,27 @@
 /// <reference types="mongoose/types/validation" />
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose/types/inferschematype" />
+/// <reference types="mongoose-paginate-v2" />
 import { Board, BoardSchema } from './schema/board.schema';
-import { Model } from 'mongoose';
+import { Model, PaginateModel } from 'mongoose';
 import { BoardDTO } from './dto/board.dto';
 import { UserSchema } from 'src/user/schema/user.schema';
 export declare class BoardService {
     private boardModel;
     private userModel;
-    constructor(boardModel: Model<BoardSchema>, userModel: Model<UserSchema>);
+    constructor(boardModel: PaginateModel<BoardSchema>, userModel: Model<UserSchema>);
     findAll(): Promise<(import("mongoose").Document<unknown, {}, BoardSchema> & Board & import("mongoose").Document<any, any, any> & {
         _id: import("mongoose").Types.ObjectId;
     })[]>;
+    findPagedAll(page: number, limit: number): Promise<import("mongoose").PaginateResult<import("mongoose").Document<unknown, {
+        sort: {
+            createdAt: number;
+        };
+        page: number;
+        limit: number;
+    }, BoardSchema> & Board & import("mongoose").Document<any, any, any> & {
+        _id: import("mongoose").Types.ObjectId;
+    }>>;
     findOne(_id: string): Promise<import("mongoose").Document<unknown, {}, BoardSchema> & Board & import("mongoose").Document<any, any, any> & {
         _id: import("mongoose").Types.ObjectId;
     }>;

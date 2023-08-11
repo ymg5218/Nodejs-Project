@@ -13,6 +13,14 @@ export class BoardController {
         return await this.boardService.findAll();
     }
 
+    @Get('findAll2')
+    async getPagedAll(
+        @Param('page') page : number,
+        @Param('limit') limit : number
+    ) {
+        return await this.boardService.findPagedAll(page,limit);
+    }
+
     @Post('findOne')
     async findOne(@Body() _id : string) {
         return await this.boardService.findOne(_id);

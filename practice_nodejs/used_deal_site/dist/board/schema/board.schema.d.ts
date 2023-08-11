@@ -22,6 +22,7 @@
 /// <reference types="mongoose/types/validation" />
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose/types/inferschematype" />
+/// <reference types="mongoose-paginate-v2" />
 import { ObjectId } from 'mongodb';
 import { Document } from 'mongoose';
 export type BoardSchema = Board & Document;

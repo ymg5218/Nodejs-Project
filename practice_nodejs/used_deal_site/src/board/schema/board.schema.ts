@@ -1,5 +1,4 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { IsNotEmpty } from 'class-validator';
 import { ObjectId } from 'mongodb';
 import { Document, SchemaOptions } from 'mongoose';
 import * as mongoosePaginate from 'mongoose-paginate-v2';
@@ -31,6 +30,6 @@ export class Board extends Document {
   price: number;
 }
 
-const BoardSchema = SchemaFactory.createForClass(Board);
-BoardSchema.plugin(mongoosePaginate);
-export 
+const schema = SchemaFactory.createForClass(Board);
+schema.plugin(mongoosePaginate);
+export const BoardSchema = schema;

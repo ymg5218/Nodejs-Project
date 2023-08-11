@@ -27,6 +27,15 @@ let BoardService = exports.BoardService = class BoardService {
     async findAll() {
         return this.boardModel.find();
     }
+    async findPagedAll(page, limit) {
+        return await this.boardModel.paginate({}, {
+            sort: {
+                createdAt: -1
+            },
+            page,
+            limit
+        });
+    }
     async findOne(_id) {
         const _board = await this.boardModel.findOne({ _id });
         return _board;
@@ -59,7 +68,6 @@ exports.BoardService = BoardService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, mongoose_1.InjectModel)(board_schema_1.Board.name)),
     __param(1, (0, mongoose_1.InjectModel)(user_schema_1.User.name)),
-    __metadata("design:paramtypes", [mongoose_2.Model,
-        mongoose_2.Model])
+    __metadata("design:paramtypes", [Object, mongoose_2.Model])
 ], BoardService);
 //# sourceMappingURL=board.service.js.map

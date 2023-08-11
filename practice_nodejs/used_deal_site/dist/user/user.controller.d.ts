@@ -23,6 +23,7 @@
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose" />
 /// <reference types="mongoose/types/inferschematype" />
+/// <reference types="mongoose-paginate-v2" />
 import { UserService } from './user.service';
 import { User } from './schema/user.schema';
 import { UserDTO } from './dto/user.dto';

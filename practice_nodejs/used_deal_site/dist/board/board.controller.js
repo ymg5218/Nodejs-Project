@@ -23,6 +23,9 @@ let BoardController = exports.BoardController = class BoardController {
     async getAll() {
         return await this.boardService.findAll();
     }
+    async getPagedAll(page, limit) {
+        return await this.boardService.findPagedAll(page, limit);
+    }
     async findOne(_id) {
         return await this.boardService.findOne(_id);
     }
@@ -47,6 +50,14 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], BoardController.prototype, "getAll", null);
+__decorate([
+    (0, common_1.Get)('findAll2'),
+    __param(0, (0, common_1.Param)('page')),
+    __param(1, (0, common_1.Param)('limit')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Number, Number]),
+    __metadata("design:returntype", Promise)
+], BoardController.prototype, "getPagedAll", null);
 __decorate([
     (0, common_1.Post)('findOne'),
     __param(0, (0, common_1.Body)()),

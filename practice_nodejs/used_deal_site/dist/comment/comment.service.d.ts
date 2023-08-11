@@ -22,6 +22,7 @@
 /// <reference types="mongoose/types/validation" />
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose/types/inferschematype" />
+/// <reference types="mongoose-paginate-v2" />
 import { Model } from 'mongoose';
 import { Comment, CommentSchema } from './schema/comment.model';
 import { CommentDTO } from './dto/comment.dto';
