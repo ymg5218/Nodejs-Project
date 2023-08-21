@@ -14,7 +14,7 @@ import { AuthModule } from './auth/auth.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(process.env.DB_URL, {
+    MongooseModule.forRoot("mongodb+srv://yeommingyu0106:aowlrrkawk99@cluster0.tmqnpye.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     dbName: 'used_deal',
     }),
     UserModule,
